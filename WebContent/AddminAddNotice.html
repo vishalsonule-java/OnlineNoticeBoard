@@ -1,0 +1,54 @@
+ <html>
+  <head>
+  <title>
+  </title>
+ <script src="js/adminaddnotice.js">
+ 
+
+
+
+</script>
+<link rel="stylesheet" href="css/adminaddnotice.css">
+  </head>
+  <body>
+  <div class="container">
+  <form action="AdminAddNotice" method="Post" enctype="multipart/form-data">
+  
+  <label for="title" class="lable5"><b>give a Title to notice:</b></label><br>
+  <input type="text" name="title" id="title" class="title"><br><br>
+  
+  <label for="noticebox"><b>Type notice here</b></label><br>
+  <textarea rows="4" cols="50" name="noticebox" id="notice" class="noticebox1">
+
+</textarea>
+  <br>
+       <label for="fileupload">upload notice document here</label>
+        <input type="file" name="fileupload" id="fileToUpload" ><br><br>
+   <label for="course" class="lable3"><b>select course/post here</b></label>
+   <label for="year" class="lable4"><b>select year here</b></label><br>
+  <select name="course" id="course1" class="cour" onClick="changeyear()">
+  <option value="MCA">MCA</option>
+  <option value="Msc(CS)">Msc(CS)</option>
+  <option value="Mcs(CA)">Msc(CA)</option>
+  <option value="Mcs(CN)">Msc(CN)</option>
+   <option value="Director">Dircetor</option>
+  <option value="Lecturer">Lecturer</option>
+ 
+  <option value="HOD">HOD</option>
+  <option value="Other">Other</option>
+  <option value="Staff">All Staff</option>
+  <option value="Student">All Student</option>
+  <option value="All">All</option>
+  
+  </select>
+  
+   
+  <select name="year" id="year1" class="y">
+ 
+  </select>
+  <br><br>
+  <input type="submit" value="send" class="btn">
+  </form>
+  </div>
+  </body>
+  </html>

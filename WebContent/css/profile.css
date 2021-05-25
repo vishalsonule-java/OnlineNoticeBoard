@@ -1,0 +1,126 @@
+body {
+    margin: 10%;
+    margin-top: -2.6%;
+    margin-bottom: 0%;
+    font-family: "Lato", sans-serif;}
+
+.tablink {
+    margin-top: -2.4%;
+    background-color: #000080;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+	
+}
+
+
+.tablink:active,
+.tablink:hover{
+background:#a60e25;
+}
+/* Style the tab content */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 10px;
+    text-align: center;
+}
+
+footer{
+background-color:green;
+color:white;
+text-align:center;
+display:block;
+padding-top:10px;
+padding-bottom:10px;
+}
+.fotter-copyright{
+padding-top:5px;
+}
+img.avatar {
+    width: 100%;
+ 
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: 70px;
+  text-align: center;
+  font-family: arial;
+  margin-bottom: 25px;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+.meta-info-user {
+    padding-bottom: 10px;
+}
+img.user-profile {
+    border-radius: 50%;
+    width: 10%;
+}
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}body {font-family: "Lato", sans-serif;}
+
+.baccolor
+{
+
+padding-bottom:20px;
+padding-top:20px;
+}
+
+.tablink:active,
+.tablink:hover{
+background:#a60e25;
+}
+/* Style the tab content */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+

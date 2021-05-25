@@ -1,0 +1,73 @@
+  <html>
+  <head>
+  <style>
+  .box {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+input[type=text]
+{
+width: 50%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+
+}
+input[type=text]:focus
+{
+background-color: #ddd;
+    outline: none;
+}
+.btn
+ {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    opacity: 0.9;
+}
+@media screen and (max-width: 300px) {
+    .btn {
+       width: 50%;
+    }
+}
+
+  </style>
+  <script>
+   function search()
+      {
+          var date1=document.getElementById("date1");
+          var radio1=document.getElementById("radio1");
+          if(radio1.checked==true)
+          {
+              radio1.value="all";
+              date1.value="";
+             date1.disabled = true; 
+          }
+          else
+              date1.disabled=false;
+      }
+      </script>
+  <title>
+  </title>
+  </head>
+  <body>
+  
+  <div class="box">
+  <h3>firstly search the notice by title</h3>
+  <form action="StaffSearchNotice" method="POST" target="framesection3">
+       <input type="checkbox" name="all" id="radio1" onclick="search()"> Search all Notices<br>
+  <input type="text" name="date1" id="date1">
+  <input type="submit" class="btn" value="search">
+  </form>
+  </div>
+  </body>
+  </html>

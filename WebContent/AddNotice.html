@@ -1,0 +1,62 @@
+
+ <html>
+  <head>
+  <title>
+  </title>
+  <script src="jss/addnotice.js">
+
+  </script>
+ <link rel="stylesheet" href="css/addnotice.css">
+  </head>
+  <body>
+      <div class="baccolor">
+<h1 align="center"><img src="images/logo.jpg" alt="Avatar" class="avatar"></h1>
+
+</div>
+<div>
+	<a href="StaffProfile" ><button class="tablink" id="defaultOpen">Profile</button></a>
+	<a href="staffviewnotice.html" ><button class="tablink" > View Notice</button></a>
+	<a href="AddNotice.html" ><button class="tablink" > Add Notice</button></a>
+	<a href="StaffUpdateProfile" ><button class="tablink" >Update profile</button></a>
+	<a href="StaffLogout" ><button class="tablink" >Logout</button></a>
+</div>     
+
+  <div class="container">
+  <form action="AddNotice" method="Post" enctype="multipart/form-data">
+  
+  <label for="title" class="lable5"><b>give a Title to notice:</b></label><br>
+  <input type="text" name="title" id="title" class="title" required><br><br>
+  
+  <label for="noticebox"><b>Type notice here</b></label><br>
+  <textarea rows="4" cols="50" name="noticebox" id="notice" class="noticebox1" required>
+At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
+</textarea>
+  
+  <br>
+     <label for="fileupload">upload notice document here</label>
+        <input type="file" name="fileupload" id="fileToUpload" ><br><br>
+   <label for="course" class="lable3"><b>select course here</b></label>
+   <label for="year" class="lable4"><b>select year here</b></label><br>
+   <select name="course" id="course1" class="cour" onClick="changeyear()" required>
+  <option value="MCA">MCA</option>
+  <option value="Msc(CS)">Msc(CS)</option>
+  <option value="Mcs(CA)">Msc(CA)</option>
+  <option value="Mcs(CN)">Msc(CN)</option>
+  <option value="Student">All Student</option>
+  </select>
+  
+   
+  <select name="year" id="year1" class="y">
+ 
+  </select>
+  <br><br>
+  <input type="submit" value="send" class="btn">
+  
+  </form>
+  </div>
+      <footer>
+<div align="center" class="fotter-copyright">&copy;copyright2018</div>
+<div align="center" class="fotter-title">School of Computational siences SRTMU Nanded</div>
+</footer>
+  </body>
+  </html>
